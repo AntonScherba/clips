@@ -73,7 +73,6 @@ export class FfmpegService {
   }
 
   async blobFromURL(url: string) {
-    console.log(url);
     const response = await fetch(url);
     const blob = await response.blob();
 
